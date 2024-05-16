@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<header>
+    My Survey Page
+</header>
+<head> 
+    <title>My Document</title> 
+    <style> 
+        /* Define the CSS styles here */ 
+  
+        header { 
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+        } 
+  
+        footer { 
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+        } 
+  
+        p { 
+            font-size: 16px; 
+            line-height: 1.5; 
+            margin-bottom: 20px; 
+        } 
+  
+        /* Add the print styles here */ 
+  
+        @media print { 
+  
+            /* Define the header and footer */ 
+            @page { 
+                margin-top: 1cm; 
+                margin-bottom: 1cm; 
+            } 
+  
+            header:after { 
+                content: "Header Text"; 
+                display: block; 
+                text-align: center; 
+            } 
+  
+            footer:after { 
+                content: "Footer Text"; 
+                display: block; 
+                text-align: center; 
+            } 
+        } 
+    </style> 
+</head> 
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Survey from US
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the platform
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+            <!--drop down menu -->
+            <div class="form-group">
+                <p id="quest">What is your gender?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!--drop down menu end -->
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which programming languages do you know? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="C++"> C++
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="PHP"> PHP
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="C">  C
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Java"> Java
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">Which domain are you interested in? ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="Web Dev"
+                    class="inputRadio"
+                    checked> Web Dev
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Competitive Programming"
+                    class="inputRadio"
+                    >Competitive Programming
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="AL/ML"
+                    class="inputRadio"
+                    > AL/ML
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Cryptocurrency"
+                    class="inputRadio"
+                    > Cryptocurrency
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">How you come to know about us?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >select any option</option>
+                    <option value="Friends">Friends</option>
+                    <option value="TV ads">TV ads</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Survey Page. All rights reserved.</p>
+        <address>
+          Ramnagar Rooad No.1,Agartala,Tripura,India<br>
+          Phone: 9863826611<br>
+          Email: dipjyotideb2019@gmail.com
+        </address>
+      </footer>
+</body>
+</html>
